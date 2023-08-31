@@ -1,0 +1,343 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    background-color:  #FCF6F5;
+
+}
+
+.container {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+}
+
+.left-box {
+    flex-shrink: 0;
+    width: 10%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #990011;
+}
+
+.right-box {
+    position: relative;
+    width: 90%;
+    /* Set the height of the right-box explicitly */
+    height: 15vh; /* Adjust the height as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #990011;
+    border-left: 0;
+}
+
+.additional-divs {
+    display: flex;
+    justify-content: space-between; /* Distribute space between divs */
+    align-items: center;
+    width: 90%; /* Adjust the width to match right-box */
+    position: absolute;
+    top: 15vh; /* Set the top value to match the height of the right-box */
+    height: 100%;
+    margin-left: 10%; /* Offset to match the left-box width */
+}
+
+.additional-div-left,
+.additional-div-right {
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #990011;
+    border-top: 0;
+}
+
+.additional-div-left {
+    flex-grow: 1; /* Allow it to take up available space */
+    border-left: 0;
+}
+
+.additional-div-right {
+    flex-shrink: 0; /* Prevent it from growing */
+    width: 40%; /* Set a fixed width */
+    border-left: 0;
+}
+#name1,
+#surname1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+    display: inline; 
+    position: relative;
+    top:200px;
+   
+}
+#name1{
+color: #990011;
+padding-left: 50px;
+}
+#occupation,
+#occup2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    display: inline; 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+    position: relative;
+    top:240px;
+}
+#occup2{
+    color: #990011;
+    right: 430px;
+}
+#occupation{
+    right:430px;
+}
+.devicon-linkedin-plain{
+    font-size: 50px;
+    color: #990011;
+    text-align: center;
+    position: relative;
+    left: 40px;
+    top:760px;
+}
+.devicon-github-original-wordmark{
+    font-size: 50px;
+    color: #990011;
+    text-align: center;
+    position: relative;
+    left:-12px;
+    top:830px;
+}
+#projects,
+#project-name{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);  */
+    color: #990011;
+    position: relative;
+    left: 30px;
+}
+#project-name{
+    color: black;
+    font-size: 30px;
+    bottom:20px;
+}
+#description {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px; 
+    line-height: 1.5; 
+    color: #333; 
+    background-color: transparent;
+    padding: 20px; 
+    border-radius: 2px; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+    max-width: 550px; 
+    margin-left: 30px; 
+    margin-top: -10px;
+    position: relative;
+    top: -90px;
+}
+
+#description::first-letter {
+    font-size: 28px; 
+    font-weight: bold; 
+    margin-right: 3px; 
+}
+#git{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase; 
+    position: relative;
+    left: 30px;
+    top:-50px;
+    color: #000000;
+    
+}
+a{
+    text-decoration: none !important; 
+}
+#website{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase; 
+    position: relative;
+    left: 140px;
+    top: -90px;
+    color: #000000;
+}
+#skills{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #990011;
+    position: relative;
+    left: 30px;
+    top: -100px;
+  
+}
+
+#skills-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 60px;
+    position: relative;
+    left: 30px;
+    top: -110px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill i {
+    margin-right: 10px;
+}
+
+
+
+
+.skill > p {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+#contact-me{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #990011;
+    position: relative;
+    left:1360px;
+    top:20px;
+    
+}
+/* Contact me form */
+#contact-body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #FCF6F5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 600px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="message"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-left: -10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+#back{
+    border: none;
+    cursor: pointer;
+    display: block;
+            width: 117px; 
+            height: 33px; 
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+      text-decoration: none;
+      border-radius: 3px;
+      margin-top: 10px;
+      font-size: 12px;
+}
+#back:hover {
+    background-color: #555;
+}
+
+/* About me info */
+
+#about-me {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; 
+    margin-top: 20px; 
+    padding-left: 52px;
+    position: relative;
+    top:210px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+img {
+    width: 130px;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    border: 1px solid #990011;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    bottom: 170px;
+    left:-370px;
+}
+
+
+
